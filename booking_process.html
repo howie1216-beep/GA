@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>網路訂房-B4-A7：流程步驟</title>
+    <style>
+        :root {
+            --primary-color: #f7b731; /* warm yellow */
+            --bg-color: #fcfaf5;
+            --text-color: #333333;
+            --card-bg: #ffffff;
+            --border-color: #eaeaea;
+        }
+        body {
+            font-family: 'Helvetica Neue', Arial, 'LiHei Pro', '微軟正黑體', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .header h1 {
+            font-size: 2.2em;
+            color: #2c3e50;
+            display: inline-block;
+            border-bottom: 4px solid var(--primary-color);
+            padding-bottom: 10px;
+            margin: 0;
+        }
+        .step-block {
+            background-color: var(--card-bg);
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            padding: 30px;
+            margin-bottom: 30px;
+            border: 1px solid var(--border-color);
+            position: relative;
+        }
+        .step-number {
+            position: absolute;
+            top: -20px;
+            left: -20px;
+            background-color: var(--primary-color);
+            color: #fff;
+            font-size: 1.5em;
+            font-weight: bold;
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            border-radius: 50%;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .step-block h2 {
+            margin-top: 0;
+            color: #2c3e50;
+            font-size: 1.5em;
+            margin-bottom: 20px;
+            padding-left: 20px;
+        }
+        .step-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .step-list li {
+            background-color: #f9f9f9;
+            margin-bottom: 10px;
+            padding: 15px 20px;
+            border-radius: 6px;
+            border-left: 4px solid #dcdde1;
+            display: flex;
+            align-items: flex-start;
+            transition: all 0.2s ease;
+        }
+        .step-list li:hover {
+            border-left-color: var(--primary-color);
+            background-color: #fffaf0;
+        }
+        .step-list li p {
+            margin: 0;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: #7f8c8d;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <h1>💛 網路訂房流程步驟</h1>
+    </div>
+
+    <!-- Section 1 -->
+    <div class="step-block">
+        <div class="step-number">1</div>
+        <h2>建置網路銷售專案</h2>
+        <ul class="step-list">
+            <li><p><strong>Step 1：</strong>PMS → 房型，將要串接房型上傳到網路預訂後台</p></li>
+            <li><p><strong>Step 2：</strong>PMS → 房價，將要串接的RateCode上傳到網路預訂後台</p></li>
+            <li><p><strong>Step 3：</strong>網路預訂後台 → 房型資料設定，編輯房型圖片及描述</p></li>
+            <li><p><strong>Step 4：</strong>網路預訂後台 → 類別管理，建立專案名稱及編輯圖片及描述</p></li>
+            <li><p><strong>Step 5：</strong>網路預訂後台 → 專案包裝設定，建立串接產品房型</p></li>
+            <li><p><strong>Step 6：</strong>網路預訂後台 → 數量/價格 設定，檢視要庫存跟價格是否正確</p></li>
+            <li><p><strong>Step 7：</strong>網路預訂後台 → 資料排序設定，設定專案/房型顯示順序</p></li>
+        </ul>
+    </div>
+
+    <!-- Section 2 -->
+    <div class="step-block">
+        <div class="step-number">2</div>
+        <h2>網路預訂後台(WEB) 美編訂房框架顯示</h2>
+        <ul class="step-list">
+            <li><p><strong>Step 1：</strong>網路預訂後台 → 飯店基本資料設定，編輯商家圖檔</p></li>
+            <li><p><strong>Step 2：</strong>網路預訂後台 → 須知管理，編輯訂購規範等政策</p></li>
+            <li><p><strong>Step 3：</strong>網路預訂後台 → 最新消息，編輯告知訂購者訊息</p></li>
+        </ul>
+    </div>
+
+    <!-- Section 3 -->
+    <div class="step-block">
+        <div class="step-number">3</div>
+        <h2>取消政策</h2>
+        <ul class="step-list">
+            <li><p>網路預訂後台 → 訂房系統 → 系統管理 → 取消訂房訂單，編輯取消扣款比例</p></li>
+        </ul>
+    </div>
+
+    <div class="footer">
+        <p>資料來源：網路訂房-B4-A7 GitBook</p>
+    </div>
+</div>
+
+</body>
+</html>
