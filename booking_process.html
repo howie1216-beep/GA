@@ -89,11 +89,44 @@
         .step-list li p {
             margin: 0;
         }
+        
+        /* 新增的按鈕樣式 */
+        .next-chapter-container {
+            text-align: right; /* 讓按鈕靠右 */
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+        .btn-next {
+            display: inline-flex;
+            align-items: center;
+            background-color: #2c3e50; /* 深藍色，與標題呼應 */
+            color: #ffffff;
+            padding: 12px 24px;
+            text-decoration: none;
+            font-size: 1.1em;
+            font-weight: bold;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .btn-next:hover {
+            background-color: var(--primary-color); /* 游標滑過變成黃色 */
+            color: #ffffff;
+            transform: translateY(-2px); /* 微微向上浮動效果 */
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+        .btn-next span {
+            margin-left: 8px;
+            font-size: 1.2em;
+        }
+
         .footer {
             text-align: center;
             margin-top: 40px;
             font-size: 0.9em;
             color: #7f8c8d;
+            border-top: 1px solid #eaeaea;
+            padding-top: 20px;
         }
     </style>
 </head>
@@ -139,41 +172,12 @@
         </ul>
     </div>
 
-    /* 設定按鈕所在區塊的位置 (靠右對齊) */
-.next-chapter-container {
-    text-align: right; 
-    margin-top: 30px;
-    margin-bottom: 20px;
-}
-
-/* 將原本的文字連結設計成按鈕外觀 */
-.btn-next {
-    display: inline-flex;
-    align-items: center;
-    background-color: #2c3e50; /* 深藍色底色 */
-    color: #ffffff;            /* 白色文字 */
-    padding: 12px 24px;        /* 內邊距，讓按鈕變大 */
-    text-decoration: none;     /* 移除連結預設的底線 */
-    font-size: 1.1em;
-    font-weight: bold;
-    border-radius: 8px;        /* 圓角邊框 */
-    transition: all 0.3s ease; /* 加入動畫過渡效果 */
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* 加上一點陰影增加立體感 */
-}
-
-/* 滑鼠移過去(hover)時的變化 */
-.btn-next:hover {
-    background-color: #f7b731; /* 變成黃色 */
-    color: #ffffff;
-    transform: translateY(-2px); /* 讓按鈕微微向上浮動 */
-    box-shadow: 0 6px 12px rgba(0,0,0,0.15); /* 陰影加深 */
-}
-
-/* 按鈕右側箭頭的微調 */
-.btn-next span {
-    margin-left: 8px;
-    font-size: 1.2em;
-}
+    <!-- 新增的下一章節按鈕區塊 -->
+    <div class="next-chapter-container">
+        <a href="https://colleenlin.gitbook.io/wang-lu-ding-fang-b4a7/jian-zhi-wang-lu-xiao-shou-zhuan-an" class="btn-next" target="_blank">
+            下一章：建置網路銷售專案 <span>➔</span>
+        </a>
+    </div>
 
     <div class="footer">
         <p>資料來源：網路訂房-B4-A7 GitBook</p>
